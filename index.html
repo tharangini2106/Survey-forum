@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC PROJECT 2: SURVEY FORM</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body id="body">
+  <div class="formCard">
+    <img src="https://cdn.pixabay.com/photo/2020/05/25/03/37/doctor-5216835__340.png" alt="logo" id="logo">
+    <h1 id="title">Covid-19 Survey Form</h1>
+    <p id="description">A survey form on the health of the peoples</p>
+    <form action="https://formspree.io/f/xaylrvva" method='POST' id="survey-form">
+      <label for="name" id="name-label">Name:<br>
+        <input type="text" id="name" placeholder="Enter your name e.g Thara" required></label>
+      <label for="email" id="email-label">Email:
+        <input type="email" id="email" placeholder="xyz@someplace.com" required></label>
+      <label for="number" id="number-label">Age(Optional):
+        <input type="number" id="number" placeholder="Enter your age" max="80" min="10"></label>
+
+      <p>Select state of residence</p>
+      <select name="continent" id="dropdown">
+        <option value="africa">Tamilnadu</option>
+        <option value="asia">Andhra pradesh</option>
+        <option value="australia">Kerala</option>
+        <option value="europe">Karnataka</option>
+        <option value="north-america">Maharashtra</option>
+        <option value="south-america">West-Bengal</option>
+      </select><br><br>
+
+      <p class='sub-title'>Choose your prefered gender
+      <p>
+      <div id='radios'>
+        <label for='female'> <input type="radio" name="gender" value="female" id='female'> Female </label>
+        <label for='male'> <input type="radio" name="gender" value="male" id='male'>Male</label>
+        <label for='other'> <input type="radio" name="gender" value="other" id='other'>Other</label>
+
+      </div>
+
+      <p class='sub-title'>Please select atleast one of the options below:</p>
+      <div id='checkboxes'>
+        <label for="opt1"><input type="checkbox" name="opt1" value='planted' id='opt1'>
+          I have take my vaccine first dose</label>
+        <label for="opt2"> <input type="checkbox" name="opt2" value="employee" id='opt2'>
+          I have take my vaccine both first and second dose</label>
+        <label for="opt3"><input type="checkbox" name="opt3" value='community service' id='opt3'>
+          I take part in awareness for the covid-19 free country</label>
+        <label for="opt4"><input type="checkbox" name="opt4" value='promise' id='opt4'>
+          I promise to create awareness more from now on</label>
+      </div>
+
+      <p class='sub-title'>Any comments or suggestions</p>
+      <textarea name="suggestions" id="suggestions" cols="50" rows="30" placeholder="Comments/Suggestions..."></textarea>
+      <button id="submit">Submit</button>
+    </form>
+  </div>
+</body>
+<!-- partial -->
+  
+</body>
+</html>
